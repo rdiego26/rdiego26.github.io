@@ -1,0 +1,686 @@
+/*FONT-FACE*/
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+@import url(http://fonts.googleapis.com/css?family=Kreon);
+@font-face {
+	font-family: Kreon;
+	font-family: Kreon;
+	src: url('Kreon.eot'); /* IE9 Compat Modes */
+	src: url('Kreon.eot?iefix') format('eot'), /* IE6-IE8 */  url('Kreon.ttf') format('ttf'), /* Modern Browsers */  url('Kreon.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/*RESET*/
+*{
+	margin:0;
+	padding: 0;
+	border: none;
+	list-style:none;
+	outline:none;
+}
+body{
+	width:100%;
+	height:100%;
+	color:#333;
+}
+a, a:hover{color:#333; outline:none;text-decoration:none;}
+a:hover{text-decoration:none;}
+.none{display:none;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.auto{overflow:auto;}
+.width-860{ width:860px; margin:0 auto;}
+.width-980{ width:980px; margin:0 auto;}
+
+/*CABEÇALHO*/
+.header{
+	float:left;
+	width:100%;
+	height:500px;
+	z-index:999;
+	position:relative;
+}
+.header-interna{
+	height:150px;
+	background:#00edff;
+}
+.header-sobremim{
+	background:url(../images/bg-servicos.jpg) top center;
+}
+.header-ultimosprojetos{
+	background:url(../images/bg-freelancer.jpg) top center;
+}
+.header-clientes{
+	background:url(../images/slide_01.jpg) top center;
+}
+.header-freelancer{
+	background:url(../images/bg-freelancer.jpg) top center;
+}
+.header-servicos{
+	background:url(../images/bg-servicos.jpg) top center;
+}
+.header h1 .logo{
+	width:280px;
+	height:83px;
+	z-index:999;
+	margin-top:20px;
+	position:relative;
+	background:url(../images/logo.png) repeat-x;
+}
+.header .slide{
+	width:100%;
+	height:396px;
+	margin:0 auto;
+}
+.header .slide a{
+	width:100%;
+	height:490px;
+}
+.slide-texto{
+	float:left;
+	left:300px;
+	top:180px;
+	position:absolute;
+}
+.slide-titulo{
+	float:left;
+	clear:left;
+	width:460px;
+	color:#2c2c23;
+	text-transform:uppercase;
+	font:normal 36px 'Gudea', arial;
+}
+.slide-desc{
+	float:left;
+	clear:left;
+	width:360px;
+	color:#719597;
+	margin-top:20px;
+	font:normal 17px 'Gudea', arial;
+}
+.slide-detalhes{
+	float:left;
+	clear:left;
+	width:100px;
+	height:31px;
+	z-index:99999;
+	cursor:pointer;
+	margin-top:20px;
+	text-indent:-3000px;
+	background:url(../images/slide_detalhes.png);
+}
+.header #nav{
+	top:-200px;
+	width:70%;
+	height:auto;
+	z-index:999;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto 0 auto;
+}
+.header #nav #next,
+.header #nav #prev{
+	float:left;
+	width:30px;
+	height:30px;
+	margin:0 0 0 0;
+	text-indent:-3000px;
+	background:url(../images/anterior.png);
+}
+.header #nav #next{
+	float:right;
+	background:url(../images/proxima.png);
+}
+.header #nav #prev:hover{
+	background:url(../images/anterior-h.png);
+}
+.header #nav #next:hover{
+	background:url(../images/proxima-h.png);
+}
+.header .feature-menu{
+	float:left;
+	width:500px;
+	z-index:999;
+	position:absolute;
+	margin:-40px 0 0 300px;
+}
+.header .feature-menu a{
+	float:left;
+	width:17px;
+	height:17px;
+	margin-right:4px;
+	text-indent:-3000px;
+	background:url(../images/ft.png);
+}
+.header .feature-menu a:hover,
+.header .feature-menu a.activeSlide{
+	background: url(../images/ft-h.png);
+}
+.header .compartilhe{
+	width:90px;
+	height:46px;
+	float:right;
+	z-index:9999;
+	position:relative;
+	margin:0 0 0 0;
+	padding:20px 15px 10px 0;
+}
+.header .compartilhe .at15t_twitter,
+.header .compartilhe .at15t_facebook{
+	float:left;
+	width:32px!important;
+	height:32px!important;
+	background:url('../images/facebook.png')!important;
+}
+.header .compartilhe .at15t_twitter{
+	background-image:url('../images/twitter.png')!important;
+}
+.header .compartilhe .at15t_twitter:hover{ opacity:0.9; !important;}
+.header .compartilhe .at15t_facebook:hover{opacity:0.9; !important;}
+.header #menu-topo{
+	clear:right;
+	float:right;
+	width:640px;
+	z-index:999;
+	margin:0 0 0 5px;
+	position:relative;
+}
+.header #menu-topo li a{
+	float:left;
+	width:auto;
+	height:30px;
+	color:#333;
+	margin:0 5px;
+	padding:0 5px;
+	text-transform:uppercase;
+	font:normal 14px 'Gudea', arial;
+}
+.header #menu-topo li a:hover,
+.header #menu-topo li a.active{
+	height:28px;
+	border-bottom:2px solid #333;
+}
+.header #menu-topo li ul{
+	width:220px;
+	background:#fff;
+	position:absolute;
+	border:1px solid #d9d9d9;
+	margin: 30px 0 0 230px;
+}
+.header #menu-topo li ul li{
+	float:left;
+	width:210px;
+	margin:0 5px;
+	height:25px;
+	padding:10px 0 0 0;
+	border-bottom:1px dotted #000;
+}
+.header #menu-topo li ul li a{
+	float:left;
+	font-size:13px;
+	text-transform:none;
+}
+.header #menu-topo li ul li a:hover{
+	border:none;
+	color:#666;
+}
+
+/*CONTEUDO*/
+.content{
+	float:left;
+	width:100%;
+	height:auto;
+}
+h2{
+	margin:20px 0;
+	font:normal 26px 'Kreon', arial;
+}
+.ultimos-projetos{
+	float:left;
+	width:100%;
+	height:275px;
+	padding:150px 0;
+	background:#f3f2ef;
+}
+.content .home{
+	float:left;
+	width:460px;
+	padding-bottom:50px;
+}
+.content .home-right{
+	float:right;
+}
+.content .home .home-box{
+	float:left;
+	width:420px;
+	height:220px;
+	padding:0 20px;
+	background:#efeeea;
+}
+.content .home .home-box p{
+	color:#333;
+	margin:15px 0;
+	font:normal 14px 'Gudea', arial;
+}
+.content .home .home-box a.cliente{
+	float:left;
+	width:135px;
+	padding-left:10px;
+	background:url(../images/bg-clientes.jpg) right no-repeat;
+}
+.content .home .home-box a.cliente-last{
+	padding-left:0;
+	width:130px;
+}
+.content span.linha{
+	float:left;
+	width:98%;
+	height:1px;
+	margin:0 0 20px 0;
+	background:url(../images/linha.jpg);
+}
+.content .home .home-box .detalhes{
+	float:left;
+	width:87px;
+	height:27px;
+	text-indent:-3000px;
+	background:url(../images/projeto_07.jpg);
+}
+.content .title{
+	float:left;
+	width:100%;
+	height:60px;
+	background:#000;
+}
+.content h2{
+	color:#fff;
+	margin-top:15px;
+}
+.content .ultimos-projetos h2{
+	color:#000;
+	margin-top:15px;
+}
+.content h3{
+	color:#000;
+	font:bold 22px 'Gudea', arial;
+}
+.content p{
+	color:#333;
+	margin:20px 0;
+	font:normal 16px 'Gudea', arial;
+}
+.content .interna{
+	float:left;
+	width:100%;
+	padding:20px 0;
+	min-height:300px;
+}
+.content .clientes li{
+	float:left;
+	height:180px;
+	height:180px;
+	margin-right:40px;
+	border:1px solid #dbdbdb;
+}
+.content .texto-box{
+	float:left;
+	margin:30px 0 10px 0;
+}
+.content .texto-box-right{
+	float:right;
+}
+.content .texto-box h3{
+	font:normal 26px 'Kreon', arial;
+}
+.content .texto-box .home{
+	float:left;
+	margin:10px 0;
+}
+
+.content #contatoc label,
+.content #contatoc .radio{
+	float:left;
+	width:450px;
+	height:70px;
+	margin:0 40px 30px 0;
+}
+.content #contatoc .radios{
+	float:left;
+	width:40%;
+	margin:15px 0 20px 0;
+}
+.content #contatoc  label.error{ 
+	float:left;
+	background:none;
+	color:#F00;
+	font-size:12px;
+	padding:0;
+	margin:5px 0 0 0;
+	font-weight:bold; 
+	font-family: 'Gudea', sans-serif;
+}
+.content #contatoc label.txt{
+	float:right;
+	height:220px;
+}
+.content #contatoc label.txt-full{
+	float:left;
+	height:100%;
+	margin-top:10px;
+}
+.content #contatoc label span,
+.content #contatoc .radio span,
+.content #contatoc label input{
+	color:#000;
+	font-size:16px;
+	font-family: 'Gudea', sans-serif;
+}
+.content #contatoc label span.loja{
+	float:left;
+	margin-top:25px;
+}
+.content #contatoc label input,
+.content #contatoc label select,
+.content #contatoc label textarea{
+	width:99%;
+	float:left;
+	height:40px;
+	margin-top:10px;
+	border-radius:5px;
+	border:1px solid #d9d9d9;
+}
+.content #contatoc label select{
+	width:100%;
+	height:42px;
+	color:#000;
+	font-size:14px;
+	font-family: 'Gudea', sans-serif;
+}
+.content #contatoc label textarea{
+	height:201px;
+}
+.content #contatoc label.txt-full textarea{
+	width:500px;
+}
+.content #contatoc input[type=submit]{
+	float:right;
+	width:64px;
+	height:34px;
+	border:none;
+	cursor:pointer;
+	margin:0 425px 0 0;
+	text-indent:-3000px;
+	background: url(../images/enviar.jpg)
+}
+.content #contatoc input[type=submit]:hover{
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+/*CONTATO*/
+.form-contato{
+	width:360px;
+	padding:30px 0;
+}
+#form-contato label{
+	display:block;
+	font:normal 15px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+#form-contato label.error{
+	width:340px;
+	padding:10px;
+	margin-top:-15px;
+	margin-bottom:10px;
+	font:italic 12px 'Tahoma', sans-serif;
+	background-color:#000;
+	color:#FFF;
+	opacity:0.5;
+	position:relative;
+	z-index:0;
+}
+#form-contato input, #form-contato textarea{
+	width:340px;
+	padding:10px;
+	border:1px solid #d7d7d7;
+	border-radius:5px;
+	color:#060709;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin-bottom:10px;
+	position:relative;
+	z-index:1;
+}
+#form-contato textarea{
+	min-width:340px;
+	max-width:340px;
+	min-height:130px;
+}
+#form-contato input:hover, #form-contato textarea:hover{
+	background-color:#F8F8F8;
+}
+#form-contato input:focus, #form-contato textarea:focus{
+	background-color:#FFF;
+	border:1px solid #222;
+	color:#333;
+}
+#form-contato input[type="submit"]{
+	border:0;
+	box-shadow:none;
+	background-image:url('../images/enviarc.jpg');
+	width:275px;
+	height:46px;
+	margin:10px 40px;
+	cursor:pointer;
+}
+#form-contato input:hover[type="submit"]{background-position:0 -46px;}
+#form-contato input:active[type="submit"]{background-position:0 -92px;}
+.ou{
+	width:47px;
+	height:670px;
+	margin:0 36px;
+}
+.dados-de-contato{
+	width:500px;
+	padding:0;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.dados-de-contato ul li{
+	background-image:url('../images/separator.png');
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding:15px 0;
+	font:normal 18px Arial, Helvetica, sans-serif;
+	color:#060709;
+	float:left;
+	width:425px;
+}
+.dados-de-contato ul li img{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	top:-3px;
+}
+.dados-de-contato ul li span{
+	display:block;
+	float:left;
+	width:425;
+}
+.dados-de-contato li a{
+	text-decoration:none;
+	font:normal 18px Arial, Helvetica, sans-serif;
+	color:#48484A;
+}
+.dados-de-contato li a:hover{text-decoration:underline;}
+.dados-de-contato li iframe{
+	background-color:#FFF;
+	padding:5px;
+	border:1px solid #B4B3B2;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+
+/*Carrocel Ultimos Projetos*/
+.jcarousel-skin-tango .jcarousel-container {
+	float:left;
+	width:960px;
+	padding-left:10px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 100%;
+    height: 200px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  100%;
+    height: 210px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 330px;
+    height: 162px;
+}
+.jcarousel-skin-tango .jcarousel-item .foto{
+    float:left;
+	width:262px;
+	height:118px;
+	background:#fff;
+	padding:4px;
+	border:1px solid #cccbc9;
+}
+.jcarousel-skin-tango .jcarousel-item .detalhes{
+    float:left;
+	width:87px;
+	height:27px;
+	margin:15px 0 0 90px;
+	text-indent:-3000px;
+	background:url(../images/projeto_07.jpg);
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+	top:50px;
+    left: 980px;
+    width: 30px;
+    height: 30px;
+	cursor:pointer;
+    position: absolute;
+    background: url(../images/proxima.png);	
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	top:50px;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+	cursor:pointer;
+    position: absolute;
+    background: url(../images/anterior.png)
+}
+
+/*RODAPE*/
+.footer{
+	float:left;
+	width:100%;
+	height:170px;
+	padding:10px 0 0 0;
+	background:#2c2c23;
+}
+.footer{
+	color:#FFF;
+}
+.footer h2{
+	font:bold 26px 'Kreon', serif;
+	font-weight:normal;
+	margin:10px 0 0 0;
+}
+.footer p{
+	margin-top:10px;
+	font:normal 16px 'Gudea', serif;
+}
+.footer p.phone{
+	margin-top:10px;
+	font:normal 16px 'Gudea', serif;
+	padding:0 0 0 15px;
+	background:url(../images/footer_13.jpg) 0 5px no-repeat;
+}
+.footer p.mail{
+	font:normal 16px 'Gudea', serif;
+	padding:0 0 0 15px;
+	background:url(../images/footer_10.jpg) 0 5px no-repeat;
+}
+.footer .col1,
+.footer .col1 a{
+	text-decoration:none;
+	font:normal 16px 'Kreon', sans-serif;
+	color:#FFF;
+	width:300px;
+}
+#news input{
+	background-image:url('../images/news_10.jpg');
+	background-repeat:no-repeat;
+	width:308px;
+	height:35px;
+	padding:2px 10px;
+	float:left;
+	font:normal 14px 'Gudea', serif;
+	color:#000;
+	margin-top:10px;
+}
+#news input[type="submit"]{
+	background-image:url('../images/news_11.jpg');
+	width:36px;
+	height:39px;
+	position:relative;
+	right:1px;
+	bottom:0;
+	cursor:pointer;
+}
+#news input:hover[type="submit"]{opacity:0.9; }
+#news input:active[type="submit"]{opacity:0.9; }
+.col3{
+	background-image:url('../images/compartilhe-rodape-solucao-do-lar-assistencia-residencial.png');
+	background-repeat:no-repeat;
+	background-position:left 30px;
+}
+.col3 .addthis_toolbox{width:146px; height:63px; padding:32px 0 0 30px; margin:-25px 0 0 0;}
+.col3 .at15t_twitter,
+.col3 .at15t_facebook{
+	float:left;
+	width:32px!important;
+	height:32px!important;
+	margin-right:5px;
+	background:url('../images/facebook.png')!important;
+}
+.col3 .at15t_twitter{
+	background:url('../images/twitter.png')!important;
+}
+.col2{
+	margin-left:30px;
+}
+.col3 h2{
+	text-indent:-3000px;
+}
+.col3 .at15t_twitter:hover{opacity:0.9; !important;}
+.col3 .at15t_facebook:hover{opacity:0.9; !important;}
+.creditos{
+	width:960px;
+	margin:10px 0 0 0;
+}
+.creditos p{
+	color:#fff;
+	text-transform:uppercase;
+	font:bold 13px 'Kreon', sans-serif;
+}
