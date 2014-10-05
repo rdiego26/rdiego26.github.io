@@ -7,6 +7,54 @@
  */
 
 /* ==============================================
+ Contact form
+ =============================================== */
+function sendMessage() {
+
+    var _name = jQuery("#name").val(),
+        _email = jQuery("#email").val(),
+        _subject = jQuery("#subject").val(),
+        _website = jQuery("#website").val(),
+        _message = jQuery("#message").val();
+
+    jQuery.ajax({
+        type: "POST",
+        url: 'http://diegoramos.me:4500/sendEmail',
+        data: {name: _name, email: _email, subject: _subject, website: _website, message: _message},
+        success: function (res) {
+
+            if (res && res.status.cod == 200) {
+                jQuery("#name").val('');
+                jQuery("#email").val('');
+                jQuery("#subject").val('');
+                jQuery("#website").val('');
+                jQuery("#message").val('');
+
+                $("#messages").html('<div class="alert alert-success alert-dismissible" role="alert">' +
+                        '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
+                        'Message sent, i will return as soon as possible' + '</div>'
+                );
+
+            } else {
+                $("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">' +
+                        '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
+                        'A problem occurred during sent message' +  '</div>'
+                );
+            }
+
+        },
+        error: function (err) {
+            $("#messages").html('<div class="alert alert-danger alert-dismissible" role="alert">' +
+                    '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
+                    'A problem occurred during sent message' +  '</div>'
+            );
+        }
+
+    });
+
+}
+
+/* ==============================================
 portfolio gallery slide
 =============================================== */
 $(window).load(function() {
@@ -126,9 +174,5 @@ jQuery(document).ready(function($) {
         time: 800
     });
 });
-
-
-
-
 
 

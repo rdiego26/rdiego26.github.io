@@ -377,22 +377,24 @@
                          <form id="contactForm" class="wow animated fadeInLeft" data-wow-delay="0.3s">
                              <div class="row">
                                  <div class="col-md-6">
-                                     <input type="text" name="name" class="form-control" placeholder="Name...">
+                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name...">
                                  </div>
                                  <div class="col-md-6">
-                                     <input type="email" name="email" class="form-control" placeholder="Email...">
+                                     <input type="email" id="email" name="email" class="form-control" placeholder="Email...">
                                  </div>
                                     <div class="col-md-6">
-                                     <input type="text" name="subject" class="form-control" placeholder="Subject...">
+                                     <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject...">
                                  </div>
                                     <div class="col-md-6">
-                                     <input type="text" name="website" class="form-control" placeholder="Website...">
+                                     <input type="text" id="website" name="website" class="form-control" placeholder="Website...">
                                  </div>
                                   <div class="col-md-12">
-                                      <textarea class="form-control" name="message" rows="8" placeholder="Your Message..."></textarea>
+                                      <textarea class="form-control" id="message" name="message" rows="8" placeholder="Your Message..."></textarea>
                                  </div>
-                                  <div class="col-md-12 text-right">
-                                      <button type="submit" class="btn btn-lg btn-theme-color wow animated fadeInLeft" data-wow-delay="0.6s">Send Message</button>
+                                 <div id="messages" class="col-md-6 text-right">
+                                 </div>
+                                 <div class="col-md-6 text-right">
+                                      <button type="button" class="btn btn-lg btn-theme-color wow animated fadeInLeft" data-wow-delay="0.6s" onclick="sendMessage()">Send Message</button>
                                  </div>
                              </div>
                          </form>
