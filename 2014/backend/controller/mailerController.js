@@ -19,6 +19,7 @@ exports.sendEmail = function(req, res) {
 
     var mailOptions = {
         from: _name + ' <'+ _email+'>', // sender address
+        replyTo: _name + ' <'+ _email+'>', // sender address
         to: constants.email.contactEmail, // list of receivers
         subject: _subject, // Subject line
         text: _message // plaintext body
