@@ -45,10 +45,12 @@ module.exports = function(grunt) {
         },
 
         cssmin: {
-            files: {
-                'build/css/animate.css': ['css/animate.css'],
-                'build/css/flexslider.css': ['css/flexslider.css'],
-                'build/css/style.css': ['css/style.css']
+            my_target: {
+                files: {
+                    'build/css/animate.css': ['build/css/animate.css'],
+                    'build/css/flexslider.css': ['build/css/flexslider.css'],
+                    'build/css/style.css': ['build/css/style.css']
+                }                
             }
         },
 
