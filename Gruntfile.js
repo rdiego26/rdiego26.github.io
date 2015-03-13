@@ -1,7 +1,4 @@
 /**
- * Created by ramos on 14/11/14.
- */
-/**
  * Created by ramos on 02/11/14.
  */
 module.exports = function(grunt) {
