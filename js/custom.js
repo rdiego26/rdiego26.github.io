@@ -9,25 +9,34 @@
 /* ==============================================
  Contact form
  =============================================== */
-function sendMessage() {
+function sendMessage(_btnObject) {
+
+
 
     var _name = jQuery("#name").val(),
         _email = jQuery("#email").val(),
         _subject = jQuery("#subject").val(),
         _website = jQuery("#website").val(),
-        _message = jQuery("#message").val();
+        _message = jQuery("#message").val(),
+        _btnLadda = Ladda.create(_btnObject);
+
+    //Starting button animation
+    _btnLadda.start();
+
 
     if(_name === '' || _name == undefined) {
         jQuery("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">' +
                 '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                 'Por favor, informe seu nome' +  '</div>'
         );
+        _btnLadda.stop();
     } else if(!validateEmail(_email)) {
 
         jQuery("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">' +
                 '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                 'Por favor, informe um e-mail válido' +  '</div>'
         );
+        _btnLadda.stop();
 
     } else if(_website != '' || _website == undefined) {
         if(!validateWebsite(_website)) {
@@ -35,12 +44,14 @@ function sendMessage() {
                 '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                 'Website informado inválido' +  '</div>');
         }
+        _btnLadda.stop();
 
     } else if(_message === '' || _message === undefined) {
         jQuery("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">' +
                 '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                 'Por favor, informe a mensagem' +  '</div>'
         );
+        _btnLadda.stop();
     } else {
 
         jQuery.ajax({
@@ -60,12 +71,14 @@ function sendMessage() {
                             '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                             'Obrigado pelo contato, retornarei o mais breve possível' + '</div>'
                     );
+                    _btnLadda.stop();
 
                 } else {
                     jQuery("#messages").html('<div class="alert alert-warning alert-dismissible" role="alert">' +
                             '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                             'Um problema ocorreu durante o envio da mensagem' +  '</div>'
                     );
+                    _btnLadda.stop();
                 }
 
             },
@@ -74,6 +87,7 @@ function sendMessage() {
                         '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
                         'Um problema ocorreu durante o envio da mensagem' +  '</div>'
                 );
+                _btnLadda.stop();
             }
 
         });

@@ -27,6 +27,10 @@
     <link href="icons/css/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet">
     <!--animated css-->
     <link href="css/animate.css" rel="stylesheet">
+    <!--animated button-->
+    <link href="css/ladda/ladda-themeless.min.css" rel="stylesheet">
+    <script src="js/ladda/spin.js"></script>
+    <script src="js/ladda/ladda.js"></script>
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -425,7 +429,7 @@
                                 <div id="messages" class="col-md-6 text-center">
                                 </div>
                                 <div class="col-md-6 text-right">
-                                    <button type="button" class="btn btn-lg btn-theme-color wow animated fadeInLeft" data-wow-delay="0.6s" onclick="sendMessage()">Enviar mensagem</button>
+                                    <button id="btnSend" type="button" class="btn btn-lg btn-theme-color wow animated fadeInLeft ladda-button" data-style="expand-right" data-wow-delay="0.6s" onclick="sendMessage(this);"><span class="ladda-label">Enviar mensagem</span></button>
                                 </div>
                             </div>
                         </form>
@@ -433,7 +437,6 @@
                 </div>
             </div>
         </section><!--contact section-->
-
 
         <div class="follow-me parallax" data-stellar-background-ratio="0.5">
             <div class="container">
