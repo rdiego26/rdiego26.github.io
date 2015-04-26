@@ -298,6 +298,8 @@ input[type="color"]:focus,
 .image-wrapper img{
     width:100%;
     height: auto;
+    border: 2px dotted #E9E9E9;
+    border-bottom: none;
 }
 .image-overlay{
     position: absolute;
@@ -331,8 +333,7 @@ input[type="color"]:focus,
 
 .work-sesc{
     padding: 15px 10px;
-    border:1px solid #E9E9E9;
-    border-top: none;
+    border: 2px dotted #E9E9E9;
 }
 
 .work-sesc p{
