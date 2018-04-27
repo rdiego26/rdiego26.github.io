@@ -743,6 +743,11 @@ position: relative;
 .social-big li a i.twt{
     background-color: #35bdf6;
 }
+
+.social-big li a i.linkedin{
+    background-color: #2550a0;
+}
+
 .social-big li a i.plus{
     background-color: #b92c28;
 }

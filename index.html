@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>Diego Ramos | Web and Mobile Developer</title>
+    <title>Diego Ramos | Full stack engineer</title>
     <meta charset="utf-8">
-    <meta name="description" content="Developing web systems and mobile applications. PHP, hybrid applications, native applications, Java, Javascript, AngularJS, NodeJS, NoSQL." />
+    <meta name="description" content="Developing web systems and mobile applications. Scala, PHP, hybrid applications, Android, Java, Javascript, AngularJS, NodeJS, NoSQL, Redis, PostgreSQL." />
 
     <meta name="google-site-verification" content="UA-61340432-1">
     <meta name="robots" content="all">
@@ -370,7 +370,28 @@
                                     </div><!--.work-desc-->
                                 </div><!--work item-->
 
+                                 <div class="mix col-md-4 col-sm-6 software margin-btm-20">
+                                    <a href="#">
+                                        <div class="image-wrapper">
+                                            <img src="img/client/gupy.png" class="img-responsive" alt="Gupy" width="360" height="360">
+                                            <div class="image-overlay">
+                                                <p>
+                                                    Software development <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="work-sesc">
+                                        <p>
+                                            Gupy
+                                        </p>
+                                    </div><!--.work-desc-->
+                                </div><!--work item-->
+
                             </div><!--#grid for filter items-->
+
+                            </div><!--#grid for filter items-->
+
                         </div><!--.col-md-12 of portfolio filter-->
                     </div><!--.row-->
                 </div><!--.contianer-->
@@ -385,9 +406,12 @@
                     </div>
                     <div class="col-md-12 text-center">
                         <ul class="social-big list-inline">
-                            <li><a href="https://facebook.com/rdiego26" target="_blank"><i class="ion-social-facebook-outline fb"  data-toggle="tooltip" title="" data-original-title="Facebook" data-placement="top"></i></a></li>
-                            <li><a href="https://plus.google.com/114918814232527504715" target="_blank"><i class="ion-social-googleplus-outline plus"  data-toggle="tooltip" title="" data-original-title="googleplus" data-placement="top"></i></a></li>
-                            <li><a href="https://github.com/rdiego26" target="_blank"><i class="ion-social-github-outline git"  data-toggle="tooltip" title="" data-original-title="github" data-placement="top"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/rdiego26" target="_blank"><i class="ion-social-linkedin linkedin"  data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="top"></i></a>
+                            </li>
+                            <li
+                                ><a href="https://github.com/rdiego26" target="_blank"><i class="ion-social-github-outline git"  data-toggle="tooltip" title="" data-original-title="github" data-placement="top"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -422,14 +446,16 @@
         <script src="js/custom.js" type="text/javascript"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript">
-            var myLatlng;
-            var map;
-            var marker;
+            let myLatlng;
+            let map;
+            let marker;
+            let currentlyLivingStr = "Currently i'm living in"
+            let currentlyLocationStr = "São Paulo"
 
             function initialize() {
-                myLatlng = new google.maps.LatLng(-22.816525, -43.290940);
+                myLatlng = new google.maps.LatLng(-23.533773, -46.625290);
 
-                var mapOptions = {
+                let mapOptions = {
                     zoom: 13,
                     center: myLatlng,
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -438,9 +464,9 @@
                 };
                 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-                var contentString = '<p style="line-height: 20px;"><strong>Rio de Janeiro</strong></p><p>11 Rua Estrela D\'oeste, Rio de Janeiro, RJ</p>';
+                let contentString = `<p style="line-height: 20px;">${currentlyLivingStr},<strong>${currentlyLocationStr}</strong></p>`;
 
-                var infowindow = new google.maps.InfoWindow({
+                let infowindow = new google.maps.InfoWindow({
                     content: contentString
                 });
 
