@@ -71,25 +71,32 @@
 
         $('#contact_form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
 
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        var messageAlert = 'alert-' + data.type;
-                        var messageText = data.message;
+	            let template_params = {
+		            "from_email": $('#form_email').val(),
+		            "reply_to": $('#form_email').val(),
+		            "subject": $('#form_subject').val(),
+		            "from_name":$('#form_name').val(),
+		            "message": $('#form_message').val()
+	            };
 
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                        if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
-                        }
-                    }
-                });
-                return false;
+	            let service_id = "gmail";
+	            let template_id = "template_Zg2uHezm";
+	            emailjs.send(service_id, template_id, template_params);
+
+	            let messageAlert = 'alert-success';
+	            let messageText = 'Message was delivered! I will answer you as soon as possible :)';
+
+	            let alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+	            if (messageAlert && messageText) {
+		            $('#contact_form').find('.messages').html(alertBox);
+		            $('#contact_form')[0].reset();
+	            }
+
+	            setTimeout(() => {
+		            $('#contact_form').find('.messages').html('');
+              }, 3000);
+              return false;
             }
         });
     });
@@ -304,13 +311,6 @@
             },
         });
 
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
     });
 
 })(jQuery);
