@@ -1,535 +1,867 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <title>Diego Ramos | Web and Mobile Developer</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Developing web systems and mobile applications. PHP, hybrid applications, native applications, Java, Javascript, AngularJS, NodeJS, NoSQL." />
-
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Diego Ramos Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Developing web systems and mobile applications. AWS, Java, Android, Javascript, React JS, NodeJS, NoSQL, Redis, PostgreSQL." />
+    <meta name="keywords" content="Consulting, Freelance Development" />
+    <meta name="author" content="Diego Ramos" />
     <meta name="google-site-verification" content="UA-61340432-1">
-    <meta name="robots" content="all">
-    <meta name="Revisit-after" content="10 days">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--bootstrap css-->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--custom css-->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!--floating labels-->
-    <link href="css/floating-labels.min.css" rel="stylesheet">
-    <!--flex slider css-->
-    <link href="css/flexslider.css" rel="stylesheet">
-    <!--google web fonts css-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-    <!--ion icons css-->
-    <link href="icons/css/ionicons.min.css" rel="stylesheet">
-    <link href="icons/css/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <!--animated css-->
-    <link href="css/animate.css" rel="stylesheet">
-    <!--animated button-->
-    <link href="css/ladda/ladda-themeless.min.css" rel="stylesheet">
-    <script src="js/ladda/spin.js"></script>
-    <script src="js/ladda/ladda.js"></script>
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
-    <body data-spy="scroll" data-target="#navigation" data-offset="80">
 
-        <section id="home" data-stellar-background-ratio="0.5">
-            <div class="parallax-overlay"></div>
-            <div class="home-content text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 home-inner">
-                            <img src="img/gravatar.jpg" alt="personal image" class="wow animated fadeInUp" data-wow-delay="0.3s" width="136" height="191">
-                            <h1 class="intro-text wow animated fadeInUp " data-wow-delay="0.6s">Olá, me chamo Diego</h1>
-                            <p class="lead wow animated bounceIn" data-wow-delay="0.9s">Um desenvolvedor Web e Mobile criativo</p>
-                            <p class="wow fadeInLeft" data-wow-delay="1.0s"><a href="#about" class="btn btn-lg btn-border-color">Mais sobre mim</a><a href="#contact" class="btn btn-lg btn-border-default">Entre em contato</a></p>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-                        </div>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="Diego Ramos">
+              </div>
+              <div class="header-titles">
+                <h2>Diego Ramos</h2>
+                <h4>Full Stack Software Engineer</h4>
+              </div>
             </div>
-        </section><!--home section parallax-->
 
-        <section id="navigation">
-            <div class="navbar navbar-default navbar-static-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">Diego Ramos</a>
+            <ul class="main-menu">
+              <li class="active">
+                <a href="#home" class="nav-anim">
+                  <span class="menu-icon lnr lnr-home"></span>
+                  <span class="link-text">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-user"></span>
+                  <span class="link-text">About Me</span>
+                </a>
+              </li>
+              <li>
+                <a href="#resume" class="nav-anim">
+                  <span class="menu-icon lnr lnr-graduation-hat"></span>
+                  <span class="link-text">Resume</span>
+                </a>
+              </li>
+             <!--  <li>
+                <a href="#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li> -->
+              <li>
+                <a href="#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/rdiego26/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/m4ndev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="copyrights">© 2020 All rights reserved.</div>
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              <!-- Home Subpage -->
+              <section data-id="home" class="animated-section start-page">
+                <div class="section-content vcentered">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="title-block">
+                          <h2>Diego Ramos</h2>
+                          <div class="owl-carousel text-rotation">                                    
+                            <div class="item">
+                              <div class="sp-subtitle">Full Stack Software Engineer</div>
+                            </div>
+                            
+                            <div class="item">
+                              <div class="sp-subtitle">Devops</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="navbar-collapse collapse">
 
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">Sobre</a></li>
-                            <li><a href="#whatdo">O que eu faço</a></li>
-                            <li><a href="#work">Clientes</a></li>
-                            <li><a href="https://medium.com/@rdiego26" target="_blank" >Blog</a></li>
-                            <li><a href="#contact">Contato</a></li>
+                </div>
+              </section>
+              <!-- End of Home Subpage -->
+
+              <!-- About Me Subpage -->
+              <section data-id="about-me" class="animated-section">
+                <div class="page-title">
+                  <h2>About <span>Me</span></h2>
+                </div>
+
+                <div class="section-content">
+                  <!-- Personal Information -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+                      <p>Developer for over 13 years, I always try to be in tune with new technologies, have passion for what I do and I love challenges. I enjoy books, travel, technology, coffee and beer (not necessarily in that order).</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="info-list">
+                        <ul>
+                          <li>
+                            <span class="title">Age</span>
+                            <span class="value">30</span>
+                          </li>
+
+                          <li>
+                            <span class="title">Residence</span>
+                            <span class="value">Brazil</span>
+                          </li>
+
+                          <li>
+                            <span class="title">e-mail</span>
+                            <span class="value">rdiego26@gmail.com</span>
+                          </li>
+
                         </ul>
-
-                    </div><!--/.nav-collapse -->
-                </div><!--/.container -->
-            </div>
-        </section><!--navigation section end here-->
-
-
-        <section id="about" class="padding-80">
-            <div class="container">
-                <h1 class="section-heading wow animated fadeInDown" data-wow-delay="0.3s">Sobre</h1>
-                <div class="row">
-
-                    <div class="about-img col-md-12">
-                        <img src="img/gravatar.jpg" alt="" class="wow animated rotateInDownLeft" data-wow-delay="0.6s" width="136" height="191">
+                      </div>
                     </div>
-                </div>
-                <div class="row intro-row">
-                    <div class="col-md-12 about-me text-center">
-                        <h1>Olá</h1>
-                        <h2>me chamo Diego ramos, sou carioca e sou apaixonado por desenvolvimento <span>Web</span> e <span>mobile</span> </h2>
-                        <p>
-                            Desenvolvedor há mais de 10 anos, eu sempre tento estar em sintonia com as novas tecnologias, tenho paixão pelo que faço e adoro desafios.
-                            Eu curto livros, viagens, tecnologia, café e cerveja (não necessariamente nessa ordem).
-                        </p> <br>
-                        <p><a href="#contact" class="btn btn-theme-color">Contrate-me</a></p>
+                  </div>
+                  <!-- End of Personal Information -->
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Services -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>What <span>I Do</span></h3>
+                      </div>
                     </div>
-                </div>
+                  </div>
 
-                <div class="row">
-                    <div class="col-md-6 my-skills">
-                        <h2 class="short-heading">Minhas Habilidades</h2>
-                        <div class="skills-wrapper wow animated bounceIn" data-wow-delay="0.6s">
-                            <h3 class="heading-progress">Desenvolvimento Web<span class="pull-right">90%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 88%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" role="progressbar">
-                                </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-cloud"></i>
                             </div>
+                            <div class="ci-text">
+                              <h4>Cloud Computing</h4>
+                              <p>Cloud computing has already proven to be a great opportunity to provide scalability and a good use of your resources.</p>
+                            </div>
+                          </div>
 
-                            <h3 class="heading-progress">Desenvolvimento Mobile<span class="pull-right">75%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 78%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" role="progressbar">
-                                </div>
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-laptop-phone"></i>
                             </div>
-
-                            <h3 class="heading-progress">Infraestrutura / Arquitetura<span class="pull-right">82%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
-                                </div>
+                            <div class="ci-text">
+                              <h4>Android Development</h4>
+                              <p>Development and maintenance of Android applications.</p>
                             </div>
-
-                            <h3 class="heading-progress">Inovação<span class="pull-right">85%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h2 class="short-heading">&nbsp;</h2>
-                        <div class="skills-wrapper wow animated bounceIn" data-wow-delay="0.6s">
-                            <h3 class="heading-progress">App Design<span class="pull-right">60%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 88%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" role="progressbar">
-                                </div>
-                            </div>
-
-                            <h3 class="heading-progress">Gamification<span class="pull-right">55%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 78%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" role="progressbar">
-                                </div>
-                            </div>
-
-                            <h3 class="heading-progress">Banco de Dados ( SQL and NoSQL ) <span class="pull-right">85%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
-                                </div>
-                            </div>
-
-                            <h3 class="heading-progress">Metodologias Ágeis<span class="pull-right">75%</span></h3>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
-                                </div>
-                            </div>
+                          </div>
 
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-section-2 parallax" data-stellar-background-ratio="0.5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h2>Tem algum <span>projeto</span> interessante?</h2>
-                            <p class="lead">Entre em contato, certamente poderei ajudá-lo</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="#contact" class="wow animated bounceIn btn btn-theme-color btn-lg" data-wow-delay="0.6s">Entre em contato</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--about section-->
-
-        <section id="whatdo" class="padding-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="section-heading">O que eu faço ?</h1>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <!--
-                    <div class="col-md-offset-2">
-                        <div class="services wow animated fadeInUp" data-wow-delay="0.3s">
-                            <i class="ion-monitor"></i>
-                            <h3>Design para web e mobile</h3>
-                            <p>O visual de um sistema / aplicação são os fatores mais influentes do uso contínuo por parte do cliente final. A sensação de que o usuário utilize o sistema / aplicação deve ser o melhor possível, o cliente deve se sentir bem e ver que o seu problema está sendo resolvido.</p>
-                        </div>
-                    </div>
-                    -->
-
-                    <div class="col-md-3">
-                        <div class="services wow animated fadeInUp" data-wow-delay="0.6s">
-                            <i class="ion-iphone"></i> &nbsp;&nbsp;&nbsp;
-                            <i class="ion-monitor"></i>
-                            <h3>Desenvolvimento Web e Mobile</h3>
-                            <p>Atuando em todas etapas do desenvolvimento com validações em durante cada entrega, dessa maneira você terá .</p>
-                        </div>
+                      </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="services wow animated fadeInUp" data-wow-delay="0.9s">
-                            <i class="ion-cloud"></i>
-                            <h3>Infraestrutura e arquitetura</h3>
-                            <p>A infra-estrutura e a arquitetura de seus sistemas / aplicações são críticas para o sucesso e a disponibilidade do mesmo.</p>
-                        </div>
-                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
 
-                    <div class="col-md-3">
-                        <div class="services wow animated fadeInUp" data-wow-delay="0.9s">
-                            <i class="ion-easel"></i>
-                            <h3>Aulas particulares</h3>
-                            <p>Dificuldade em aprender alguma tecnologia? Entre em contato! :).</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="services wow animated fadeInUp" data-wow-delay="0.9s">
-                            <i class="ion-social-github"></i>
-                            <h3>Open Source</h3>
-                            <p>No meu tempo livre costumo contribuir em alguns <a href="http://github.com/rdiego26" target="_blank">projetos</a> .</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="parallax fun-facts" data-stellar-background-ratio="0.5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 margin-btm-20">
-                            <div class="fact-inner">
-                                <h2 class="counter">38</h2>
-                                <h4>Projetos entregues</h4>
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-screen"></i>
                             </div>
-                        </div><!--fun col-->
-                        <div class="col-md-3 margin-btm-20">
-                            <div class="fact-inner">
-                                <h2 class="counter">5</h2>
-                                <h4>Clientes satisfeitos</h4>
+                            <div class="ci-text">
+                              <h4>Web Development</h4>
+                              <p>Development and maintenance of web systems.</p>
                             </div>
-                        </div><!--fun col-->
-                        <div class="col-md-3 margin-btm-20">
-                            <div class="fact-inner">
-                                <h2 class="counter">179</h2>
-                                <h4>Livros lidos</h4>
+                          </div>
+
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-flag"></i>
+                            </div><div class="ci-text">
+                              <h4>Management</h4>
+                              <p>Need help to organize and conduct the progress of your project? Agile methodologies are the key to success!</p>
                             </div>
-                        </div><!--fun col-->
-                        <div class="col-md-3 margin-btm-20">
-                            <div class="fact-inner">
-                                <h2 class="counter">3471</h2>
-                                <h4>Canecas de café</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Services -->
+
+                  <div class="white-space-30"></div>
+
+                  <!-- Testimonials -->
+                  <!--<div class="row">-->
+                    <!--<div class="col-xs-12 col-sm-12">-->
+                      <!--<div class="block-title">-->
+                        <!--<h3>Testimonials</h3>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                  <!--<div class="row">-->
+                    <!--<div class="col-xs-12 col-sm-12">-->
+                      <!--<div class="testimonials owl-carousel">-->
+                        <!--&lt;!&ndash; Testimonial 1 &ndash;&gt;-->
+                        <!--<div class="testimonial">-->
+                          <!--<div class="img">-->
+                            <!--<img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">-->
+                          <!--</div>-->
+                          <!--<div class="text">-->
+                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
+                          <!--</div>-->
+
+                          <!--<div class="author-info">-->
+                            <!--<h4 class="author">Julia Hickman</h4>-->
+                            <!--<h5 class="company">Omni Source</h5>-->
+                            <!--<div class="icon">-->
+                              <!--<i class="fas fa-quote-right"></i>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End of Testimonial 1 &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Testimonial 2 &ndash;&gt;-->
+                        <!--<div class="testimonial">-->
+                          <!--<div class="img">-->
+                            <!--<img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">-->
+                          <!--</div>-->
+                          <!--<div class="text">-->
+                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
+                          <!--</div>-->
+
+                          <!--<div class="author-info">-->
+                            <!--<h4 class="author">Robert Watkins</h4>-->
+                            <!--<h5 class="company">Endicott Shoes</h5>-->
+                            <!--<div class="icon">-->
+                              <!--<i class="fas fa-quote-right"></i>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End of Testimonial 2 &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Testimonial 3 &ndash;&gt;-->
+                        <!--<div class="testimonial">-->
+                          <!--<div class="img">-->
+                            <!--<img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">-->
+                          <!--</div>-->
+                          <!--<div class="text">-->
+                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
+                          <!--</div>-->
+
+                          <!--<div class="author-info">-->
+                            <!--<h4 class="author">Kristin Carroll</h4>-->
+                            <!--<h5 class="company">Helping Hand</h5>-->
+                            <!--<div class="icon">-->
+                              <!--<i class="fas fa-quote-right"></i>-->
+                            <!--</div>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; End of Testimonial 3 &ndash;&gt;-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                  <!-- End of Testimonials -->
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Clients -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Clients</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="clients owl-carousel">
+                        
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/frv.jpg" alt="FRV Contabilidade">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.aerospacetrack.com/" target="_blank" title="Logo">
+                            <img src="img/clients/aerospacetrack2.png" alt="Aero space track" class="clients-align">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="http://agilesistemas.com/" target="_blank" title="Logo">
+                            <img src="img/clients/agile.jpg" alt="Agile - Sistemas de Segurança">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.carenet.com.br/" target="_blank" title="Logo">
+                            <img src="img/clients/carenet.png" alt="Carenet Longevity" class="clients-align">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.teck.com.br/" target="_blank" title="Logo">
+                            <img src="img/clients/teck.jpg" alt="Teck Labs">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.gupy.io/" target="_blank" title="Logo">
+                            <img src="img/clients/gupy.png" alt="Gupy">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://2ltecnologia.com.br/" target="_blank" title="Logo">
+                            <img src="img/clients/2L.jpg" alt="2L Tecnologia">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.liuv.it/" target="_blank" title="Logo">
+                            <img src="img/clients/liuv.png" alt="Liuv" class="clients-align">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="https://www.uerj.br/" target="_blank" title="Logo">
+                            <img src="img/clients/uerj.jpg" alt="UERJ">
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Clients -->
+
+                  <div class="white-space-50"></div>
+
+                </div>
+              </section>
+              <!-- End of About Me Subpage -->
+
+              <!-- Resume Subpage -->
+              <section data-id="resume" class="animated-section">
+                <div class="page-title">
+                  <h2>Resume</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+
+                      <div class="block-title">
+                        <h3>Education</h3>
+                      </div>
+                      
+                      <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2018</h5>
+                            <span class="item-company">Estácio de Sá University</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">System Analysis</h4>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2013</h5>
+                            <span class="item-company">Univercidade</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Computer Science</h4>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="white-space-50"></div>
+
+                      <div class="block-title">
+                        <h3>Experience</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2019 - Current</h5>
+                            <span class="item-company">Alice</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Software Engineer</h4>
+                            <p>Development and maintenance web applications and devops.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2018 - 2019</h5>
+                            <span class="item-company">Yellow / Grow Mobility</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Software Engineer</h4>
+                            <p>Development and maintenance web applications, team leadership and devops.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2018 - 2018</h5>
+                            <span class="item-company">INTI</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">CTO</h4>
+                            <p>Development and maintenance web applications, team building, devops, management.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2017 - 2018</h5>
+                            <span class="item-company">99</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Full stack Developer</h4>
+                            <p>Development and maintenance web and mobile applications and devops.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2016 - 2016</h5>
+                            <span class="item-company">Spot</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">CTO</h4>
+                            <p>Development and maintenance web applications, team building, devops, management.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2015 - 2016</h5>
+                            <span class="item-company">Rastreabilidade Brasil</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Software Engineer</h4>
+                            <p>Development and maintenance web applications.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2014 - 2015</h5>
+                            <span class="item-company">Bematech S/A</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Software Engineer</h4>
+                            <p>Development and maintenance android and web applications and leadership responsibilities.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2014 - 2014</h5>
+                            <span class="item-company">Riocard</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Software Engineer</h4>
+                            <p>Development and maintenance web applications.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2013 - 2014</h5>
+                            <span class="item-company">E-novasys</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Senior Software Engineer</h4>
+                            <p>Data engineer and web development.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2011 - 2013</h5>
+                            <span class="item-company">Microcis</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Technical leader and Software Engineer</h4>
+                            <p>Development and maintenance web applications and leadership responsibilities.</p>
+                          </div>
+                        </div>
+                        
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">2008 - 2011</h5>
+                            <span class="item-company">C2J</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">Software Engineer</h4>
+                            <p>Develop and maintenance desktop, web and wap applications.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Skills & Certificates -->
+                    <div class="col-xs-12 col-sm-5">
+
+                      <!-- Others Skills -->
+                      <div class="block-title">
+                        <h3>Others <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill -->
+                        <div class="skill clearfix">
+                          <h4>Software Architecture</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-6">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill -->
+                        
+                        <!-- Skill -->
+                        <div class="skill clearfix">
+                          <h4>Agile Methodologies</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill -->
+
+                        <!-- Skill -->
+                        <div class="skill clearfix">
+                          <h4>Management</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill -->
+                        
+                        <!-- Skill -->
+                        <div class="skill clearfix">
+                          <h4>Cloud Computing</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill -->
+
+                        <!-- Skill -->
+                        <div class="skill clearfix">
+                          <h4>Distributed Systems</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-6">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill -->
+
+                      </div>
+                      <!-- End of Others Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Coding Skills -->
+                      <div class="block-title">
+                        <h3>Coding <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 5 -->
+                        <div class="skill clearfix">
+                          <h4>JavaScript (Front/Backend)</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 5 -->
+
+                        <!-- Skill 6 -->
+                        <div class="skill clearfix">
+                          <h4>Java</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 6 -->
+                        
+                        <!-- Skill 7 -->
+                        <div class="skill clearfix">
+                          <h4>HTML/CSS</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 7 -->
+                        
+                        <!-- Skill 8 -->
+                        <div class="skill clearfix">
+                          <h4>Relational databases</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-6">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 8 -->
+
+                        <!-- Skill 9 -->
+                        <div class="skill clearfix">
+                          <h4>Non-Relational databases</h4>
+                          <div class="skill-value">70%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 9 -->
+
+                        <!-- Skill 10 -->
+                        <div class="skill clearfix">
+                          <h4>Kotlin</h4>
+                          <div class="skill-value">60%</div>
+                        </div>
+                        <div class="skill-container skill-2">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 10 -->
+                      </div>
+                      <!-- End of Coding Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Knowledges -->
+                      <div class="block-title">
+                        <h3>Knowledges</h3>
+                      </div>
+
+                      <ul class="knowledges">
+                        <li>Amazon Web Services</li>
+                        <li>Google Cloud</li>
+                        <li>Node JS</li>
+                        <li>Java</li>
+                        <li>Infrastructure</li>
+                        <li>Kotlin</li>
+                        <li>Android</li>
+                        <li>Javascript</li>
+                        <li>Problem-Solving</li>
+                        <li>Distributed Systems</li>
+                        <li>Agile Methodologies</li>
+                      </ul>
+                      <!-- End of Knowledges -->
+                    </div>
+                    <!-- End of Skills & Certificates -->
+                  </div>
+
+                </div>
+              </section>
+              <!-- End of Resume Subpage -->
+
+              <!-- Contact Subpage -->
+              <section data-id="contact" class="animated-section">
+                <div class="page-title">
+                  <h2>Contact</h2>
+                </div>
+
+                <div class="section-content">
+
+                  <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-map-marker"></i>
+                        <h4>Sao Paulo</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-envelope"></i>
+                        <h4>rdiego26@gmail.com</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-checkmark-circle"></i>
+                        <h4>Freelance Available</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                    </div>
+                    <!-- End of Contact Info -->
+
+                    <!-- Contact Form -->
+                    <div class="col-xs-12 col-sm-8">
+                      <div class="block-title">
+                        <h3>How Can I <span>Help You?</span></h3>
+                      </div>
+
+                      <form id="contact_form" class="contact-form" action="#" method="post">
+
+                        <div class="messages"></div>
+
+                        <div class="controls two-columns">
+                          <div class="fields clearfix">
+                            <div class="left-column">
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                                <label>Full Name</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                                <label>Email Address</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                                <label>Subject</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
                             </div>
-                        </div><!--fun col-->
-                    </div>
-                </div>
-            </div>
-        </section><!-- what i do section-->
-
-        <section id="work" class="padding-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="section-heading wow animated bounceIn">clientes satisfeitos</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="work-section-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="portfolio-filters text-center">
-                                <li class="filter active" data-filter="all">all</li>
-                                <li class="filter" data-filter="software">software</li>
-                                <li class="filter" data-filter="design">design</li>
-                                <li class="filter" data-filter="infrastructure">infrastructure</li>
-                            </ul><!--.portfolio-filter nav-->
-
-                            <div id="grid" class="row">
-                                <div class="mix col-md-4 col-sm-6 software margin-btm-20">
-                                    <a href="#">
-                                        <div class="image-wrapper">
-                                            <img src="img/client/agile.jpg" class="img-responsive" alt="agile" width="360" height="360">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    Implantação de sistemas de vigilância eletrônica
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->
-                                    </a>
-                                    <div class="work-sesc">
-                                        <p>
-                                            Agile
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-
-                                <div class="mix col-md-4 col-sm-6 design margin-btm-20">
-                                    <a href="#">
-                                        <div class="image-wrapper">
-                                            <img src="img/client/frv.jpg" class="img-responsive" alt="frj-contabilidade" width="360" height="360">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    CMS <br />
-                                                    Website <br />
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->
-                                    </a>
-                                    <div class="work-sesc">
-                                        <p>
-                                            FRV Contabilidade
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-
-                                <div class="mix col-md-4 col-sm-6 software margin-btm-20">
-                                    <a href="#">
-                                        <div class="image-wrapper">
-                                            <img src="img/client/teck.jpg" class="img-responsive" alt="teck-software" width="360" height="360">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    Consultoria de PostgreSQL
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->
-                                    </a>
-                                    <div class="work-sesc">
-                                        <p>
-                                            Teck Software
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-
-                                <div class="mix col-md-4 col-sm-6 software infrastructure margin-btm-20">
-                                    <a href="#">
-                                        <div class="image-wrapper">
-                                            <img src="img/client/uerj.jpg" class="img-responsive" alt="UERJ" width="360" height="360">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    Desenvolvimento de Software <br />
-                                                    Consultoria <br />
-                                                    Infraestrutura e arquitetura de aplicações
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->
-                                    </a>
-                                    <div class="work-sesc">
-                                        <p>
-                                            UERJ
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-
-
-                                <div class="mix col-md-4 col-sm-6 software infrastructure margin-btm-20">
-                                    <a href="#">
-                                        <div class="image-wrapper">
-                                            <img src="img/client/2L.jpg" class="img-responsive" alt="2L Tecnologia" width="360" height="360">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    Desenvolvimento de Software <br />
-                                                    Infraestrutura e arquitetura de aplicações
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->
-                                    </a>
-                                    <div class="work-sesc">
-                                        <p>
-                                            2L Tecnologia
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-
-                            </div><!--#grid for filter items-->
-                        </div><!--.col-md-12 of portfolio filter-->
-                    </div><!--.row-->
-                </div><!--.contianer-->
-            </div><!--work section 1-->
-        </section><!--client section-->
-
-
-        <section id="contact" class="padding-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="section-heading">Entre em contato</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <form class="wow animated fadeInLeft" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="form-group col-md-6 floating-label-form-group">
-                                    <label for="name">Nome ( Obrigatório )</label>
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Nome ( Obrigatório )">
-                                </div>
-                                <div class="form-group col-md-6 floating-label-form-group">
-                                    <label for="email">Email ( Obrigatório )</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email ( Obrigatório )">
-                                </div>
-                                <div class="form-group col-md-6 floating-label-form-group">
-                                    <label for="subject">Assunto ( Obrigatório )</label>
-                                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Assunto (Obrigatório)">
-                                </div>
-                                <div class="form-group col-md-6 floating-label-form-group">
-                                    <label for="website">Site ( Opcional )</label>
-                                    <input type="text" id="website" name="website" class="form-control" placeholder="Site (Opcional)">
-                                </div>
-                                <div class="form-group col-md-12 floating-label-form-group">
-                                    <label for="message">Mensagem ( Obrigatório )</label>
-                                    <textarea class="form-control" id="message" name="message" rows="8" placeholder="Mensagem (Obrigatório)"></textarea>
-                                </div>
-                                <div id="messages" class="col-md-6 text-center">
-                                </div>
-                                <div class="col-md-6 text-right">
-                                    <button id="btnSend" type="button" class="btn btn-lg btn-theme-color wow animated fadeInLeft ladda-button" data-style="expand-right" data-wow-delay="0.6s" onclick="sendMessage(this);"><span class="ladda-label">Enviar mensagem</span></button>
-                                </div>
+                            <div class="right-column">
+                              <div class="form-group form-group-with-icon">
+                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                <label>Message</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
                             </div>
-                        </form>
+                          </div>
+
+                          <input type="submit" class="button btn-send" value="Send message">
+                        </div>
+                      </form>
                     </div>
+                    <!-- End of Contact Form -->
+                  </div>
+
                 </div>
+              </section>
+              <!-- End of Contact Subpage -->
             </div>
-        </section><!--contact section-->
+          </div>
 
-        <div class="follow-me parallax" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 wow animated bounceIn">
-                        <h1 class="section-heading">Follow Me</h1>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <ul class="social-big list-inline">
-                            <li><a href="https://facebook.com/rdiego26" target="_blank"><i class="ion-social-facebook-outline fb"  data-toggle="tooltip" title="" data-original-title="Facebook" data-placement="top"></i></a></li>
-                            <li><a href="https://plus.google.com/114918814232527504715" target="_blank"><i class="ion-social-googleplus-outline plus"  data-toggle="tooltip" title="" data-original-title="googleplus" data-placement="top"></i></a></li>
-                            <li><a href="https://github.com/rdiego26" target="_blank"><i class="ion-social-github-outline git"  data-toggle="tooltip" title="" data-original-title="github" data-placement="top"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!--follow me section-->
+      </div>
+    </div>
 
-        <div id="map-canvas" style="width:100%; height: 350px;"></div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
 
-        <footer id="footer" class="padding-50">
-            <div class="container text-center">
-                <h4><a href="index.html">Diego Ramos</a></h4>
-                <p>&copy; Copyright 2014. All right reserved.</p>
-            </div>
-        </footer><!--footer-->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 
-        <!--script files-->
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <!--floating labels-->
-        <script src="js/floating-labels.js" type="text/javascript"></script>
-        <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
-        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-        <script src="js/wow.min.js" type="text/javascript"></script>
-        <script src="js/jquery.sticky.js" type="text/javascript"></script>
-        <script src="js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
-        <!--new version v1.1 plugin-->
-        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
-        <script src="js/custom.js" type="text/javascript"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript">
-            var myLatlng;
-            var map;
-            var marker;
+    <script src='js/perfect-scrollbar.min.js'></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
-            function initialize() {
-                myLatlng = new google.maps.LatLng(-22.816525, -43.290940);
-
-                var mapOptions = {
-                    zoom: 13,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false,
-                    draggable: false
-                };
-                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-                var contentString = '<p style="line-height: 20px;"><strong>Rio de Janeiro</strong></p><p>11 Rua Estrela D\'oeste, Rio de Janeiro, RJ</p>';
-
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Marker'
-                });
-
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map, marker);
-                });
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-
-        <!-- Analitycs -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-61340432-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-
-    </body>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>-->
+    <!--<script src="js/jquery.googlemap.js"></script>-->
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+	    (function(){
+		    emailjs.init("user_bx4bjbaboxA5D8JfHir3G");
+	    })();
+    </script>
+  </body>
 </html>
