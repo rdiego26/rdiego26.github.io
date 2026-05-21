@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#1a2e4a"/>
+  <!-- Accent bar -->
+  <rect x="0" y="46" width="64" height="4" rx="0" fill="#e84343"/>
+  <!-- Initials "DR" -->
+  <text
+    x="32"
+    y="41"
+    font-family="'Segoe UI', Arial, Helvetica, sans-serif"
+    font-size="28"
+    font-weight="800"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-1"
+  >DR</text>
+</svg>
+

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="pt" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Diego Ramos Personal Website</title>
+    <title>Diego Ramos | Consultoria e Serviços Digitais</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Developing web systems and mobile applications. AWS, Java, Android, Javascript, React JS, NodeJS, NoSQL, Redis, PostgreSQL." />
-    <meta name="keywords" content="Consulting, Freelance Development" />
+    <meta name="description" content="Consultoria e desenvolvimento de soluções digitais personalizadas. Especialista em arquitetura de software, desenvolvimento web e mobile, e otimização de processos." />
+    <meta name="keywords" content="Consultoria Digital, Serviços Digitais, Desenvolvimento Web, Desenvolvimento Mobile, Arquitetura de Software, Inteligência Artificial, Freelance, Tecnologia" />
     <meta name="author" content="Diego Ramos" />
     <meta name="google-site-verification" content="UA-61340432-1">
 
-
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
     <link rel="stylesheet" href="css/animations.css" type="text/css">
@@ -18,931 +20,455 @@
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
     <link rel="stylesheet" href="css/custom.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
   </head>
 
   <body>
-    <!-- Animated Background -->
     <div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
-    <!-- /Animated Background -->
 
-    <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
-        <div class="preloader-spinner">
-        </div>
+        <div class="preloader-spinner"></div>
       </div>
     </div>
-    <!-- /Loading animation -->
 
     <div class="page">
       <div class="page-content">
 
-          <header id="site_header" class="header mobile-menu-hide">
-            <div class="header-content">
-              <div class="header-photo">
-                <img src="img/main_photo.jpg" alt="Diego Ramos">
-              </div>
-              <div class="header-titles">
-                <h2>Diego Ramos</h2>
-                <h4>Full Stack Software Engineer</h4>
-              </div>
+        <header id="site_header" class="header mobile-menu-hide">
+          <div class="header-content">
+            <div class="header-photo">
+              <img src="img/main_photo.jpg" alt="Diego Ramos">
             </div>
+            <div class="header-titles">
+              <h2>Diego Ramos</h2>
+              <h4 data-i18n="header.sub">Consultoria &amp; Serviços Digitais</h4>
+            </div>
+          </div>
 
-            <ul class="main-menu">
-              <li class="active">
-                <a href="#home" class="nav-anim">
-                  <span class="menu-icon lnr lnr-home"></span>
-                  <span class="link-text">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#about-me" class="nav-anim">
-                  <span class="menu-icon lnr lnr-user"></span>
-                  <span class="link-text">About Me</span>
-                </a>
-              </li>
-              <li>
-                <a href="#resume" class="nav-anim">
-                  <span class="menu-icon lnr lnr-graduation-hat"></span>
-                  <span class="link-text">Resume</span>
-                </a>
-              </li>
-             <!--  <li>
-                <a href="#portfolio" class="nav-anim">
-                  <span class="menu-icon lnr lnr-briefcase"></span>
-                  <span class="link-text">Portfolio</span>
-                </a>
-              </li>
-              <li>
-                <a href="#blog" class="nav-anim">
-                  <span class="menu-icon lnr lnr-book"></span>
-                  <span class="link-text">Blog</span>
-                </a>
-              </li> -->
-              <li>
-                <a href="#contact" class="nav-anim">
-                  <span class="menu-icon lnr lnr-envelope"></span>
-                  <span class="link-text">Contact</span>
-                </a>
-              </li>
+          <ul class="main-menu">
+            <li class="active">
+              <a href="#home" class="nav-anim">
+                <span class="menu-icon lnr lnr-home"></span>
+                <span class="link-text" data-i18n="nav.home">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about-me" class="nav-anim">
+                <span class="menu-icon lnr lnr-user"></span>
+                <span class="link-text" data-i18n="nav.about">Sobre Mim</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" class="nav-anim">
+                <span class="menu-icon lnr lnr-briefcase"></span>
+                <span class="link-text" data-i18n="nav.services">Serviços</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-anim">
+                <span class="menu-icon lnr lnr-envelope"></span>
+                <span class="link-text" data-i18n="nav.contact">Contato</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="social-links">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/rdiego26/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/rdiego26" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
             </ul>
-
-            <div class="social-links">
-              <ul>
-                <li><a href="https://www.linkedin.com/in/rdiego26/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/m4ndev" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              </ul>
-            </div>
-
-            <div class="copyrights">© 2020 All rights reserved.</div>
-          </header>
-
-          <!-- Mobile Navigation -->
-          <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
           </div>
-          <!-- End Mobile Navigation -->
 
-          <!-- Arrows Nav -->
-          <div class="lmpixels-arrows-nav">
-            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          <!-- Language Switcher -->
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
           </div>
-          <!-- End Arrows Nav -->
 
-          <div class="content-area">
-            <div class="animated-sections">
-              <!-- Home Subpage -->
-              <section data-id="home" class="animated-section start-page">
-                <div class="section-content vcentered">
+          <div class="copyrights" data-i18n="footer.copy">© 2025 Diego Ramos. Todos os direitos reservados.</div>
+        </header>
 
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="title-block">
-                          <h2>Diego Ramos</h2>
-                          <div class="owl-carousel text-rotation">
-                            <div class="item">
-                              <div class="sp-subtitle">Software Engineering</div>
-                            </div>
+        <div class="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
 
-                            <div class="item">
-                              <div class="sp-subtitle">Devops</div>
-                            </div>
+        <div class="lmpixels-arrows-nav">
+          <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+          <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+        </div>
 
-                            <div class="item">
-                              <div class="sp-subtitle">Data engineering</div>
-                            </div>
-                          </div>
-                        </div>
+        <div class="content-area">
+          <div class="animated-sections">
+
+            <!-- HOME -->
+            <section data-id="home" class="animated-section start-page">
+              <div class="section-content vcentered">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="title-block">
+                      <h2>Diego Ramos</h2>
+                      <div class="owl-carousel text-rotation">
+                        <div class="item"><div class="sp-subtitle" data-i18n="carousel.1">Consultoria em Tecnologia</div></div>
+                        <div class="item"><div class="sp-subtitle" data-i18n="carousel.2">Desenvolvimento de Software</div></div>
+                        <div class="item"><div class="sp-subtitle" data-i18n="carousel.3">Arquitetura de Soluções Digitais</div></div>
+                        <div class="item"><div class="sp-subtitle" data-i18n="carousel.4">Cloud Computing &amp; DevOps</div></div>
+                        <div class="item"><div class="sp-subtitle" data-i18n="carousel.5">Soluções com Inteligência Artificial</div></div>
+                      </div>
+                      <p class="home-tagline" data-i18n="home.tagline">Transformo desafios de negócio em soluções digitais robustas e escaláveis — com mais de 15 anos de experiência ao seu lado.</p>
+                      <div class="home-cta-buttons">
+                        <a href="#resume" class="btn-primary nav-anim" data-i18n="home.cta1">Ver Serviços</a>
+                        <a href="#contact" class="btn-secondary nav-anim" data-i18n="home.cta2">Fale Comigo</a>
                       </div>
                     </div>
-
+                  </div>
                 </div>
-              </section>
-              <!-- End of Home Subpage -->
+              </div>
+            </section>
 
-              <!-- About Me Subpage -->
-              <section data-id="about-me" class="animated-section">
-                <div class="page-title">
-                  <h2>About <span>Me</span></h2>
-                </div>
-
-                <div class="section-content">
-                  <!-- Personal Information -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-7">
-                      <p>Software engineer for over 15 years, I always try to be in tune with new technologies, have passion for what I do and I love challenges. I enjoy books, travel, technology, coffee and beer (not necessarily in that order).</p>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-5">
-                      <div class="info-list">
-                        <ul>
-                          <li>
-                            <span class="title">Residence</span>
-                            <span class="value">Portugal</span>
-                          </li>
-
-                          <li>
-                            <span class="title">e-mail</span>
-                            <span class="value">rdiego26@gmail.com</span>
-                          </li>
-
-                        </ul>
-                      </div>
-                    </div>
+            <!-- SOBRE MIM -->
+            <section data-id="about-me" class="animated-section">
+              <div class="page-title">
+                <h2 data-i18n="about.title">Sobre <span>Mim</span></h2>
+              </div>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-7">
+                    <p data-i18n="about.bio1">Com mais de <strong>15 anos de experiência</strong> em engenharia de software, ajudo empresas e empreendedores a transformar ideias em produtos digitais de alto impacto. Atuo como consultor técnico estratégico e desenvolvedor — do planejamento à entrega — sempre com foco em qualidade, escalabilidade e resultados concretos.</p>
+                    <p data-i18n="about.bio2">Baseado em <strong>Braga, Portugal</strong>, atendo clientes de todo o mundo com projetos remotos e compromisso total com cada entrega.</p>
                   </div>
-                  <!-- End of Personal Information -->
-
-                  <div class="white-space-50"></div>
-
-                  <!-- Services -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>What <span>I Do</span></h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-cloud"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Cloud Computing</h4>
-                              <p>Cloud computing has already proven to be a great opportunity to provide scalability and a good use of your resources.</p>
-                            </div>
-                          </div>
-
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-laptop-phone"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Android Development</h4>
-                              <p>Development and maintenance of Android applications.</p>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-screen"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Web Development</h4>
-                              <p>Development and maintenance of web systems.</p>
-                            </div>
-                          </div>
-
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-flag"></i>
-                            </div><div class="ci-text">
-                              <h4>Management</h4>
-                              <p>Need help to organize and conduct the progress of your project? Agile methodologies are the key to success!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Services -->
-
-                  <div class="white-space-30"></div>
-
-                  <!-- Testimonials -->
-                  <!--<div class="row">-->
-                    <!--<div class="col-xs-12 col-sm-12">-->
-                      <!--<div class="block-title">-->
-                        <!--<h3>Testimonials</h3>-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</div>-->
-
-                  <!--<div class="row">-->
-                    <!--<div class="col-xs-12 col-sm-12">-->
-                      <!--<div class="testimonials owl-carousel">-->
-                        <!--&lt;!&ndash; Testimonial 1 &ndash;&gt;-->
-                        <!--<div class="testimonial">-->
-                          <!--<div class="img">-->
-                            <!--<img src="img/testimonials/testimonial-1.jpg" alt="Alex Smith">-->
-                          <!--</div>-->
-                          <!--<div class="text">-->
-                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
-                          <!--</div>-->
-
-                          <!--<div class="author-info">-->
-                            <!--<h4 class="author">Julia Hickman</h4>-->
-                            <!--<h5 class="company">Omni Source</h5>-->
-                            <!--<div class="icon">-->
-                              <!--<i class="fas fa-quote-right"></i>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                        <!--</div>-->
-                        <!--&lt;!&ndash; End of Testimonial 1 &ndash;&gt;-->
-
-                        <!--&lt;!&ndash; Testimonial 2 &ndash;&gt;-->
-                        <!--<div class="testimonial">-->
-                          <!--<div class="img">-->
-                            <!--<img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">-->
-                          <!--</div>-->
-                          <!--<div class="text">-->
-                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
-                          <!--</div>-->
-
-                          <!--<div class="author-info">-->
-                            <!--<h4 class="author">Robert Watkins</h4>-->
-                            <!--<h5 class="company">Endicott Shoes</h5>-->
-                            <!--<div class="icon">-->
-                              <!--<i class="fas fa-quote-right"></i>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                        <!--</div>-->
-                        <!--&lt;!&ndash; End of Testimonial 2 &ndash;&gt;-->
-
-                        <!--&lt;!&ndash; Testimonial 3 &ndash;&gt;-->
-                        <!--<div class="testimonial">-->
-                          <!--<div class="img">-->
-                            <!--<img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">-->
-                          <!--</div>-->
-                          <!--<div class="text">-->
-                            <!--<p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>-->
-                          <!--</div>-->
-
-                          <!--<div class="author-info">-->
-                            <!--<h4 class="author">Kristin Carroll</h4>-->
-                            <!--<h5 class="company">Helping Hand</h5>-->
-                            <!--<div class="icon">-->
-                              <!--<i class="fas fa-quote-right"></i>-->
-                            <!--</div>-->
-                          <!--</div>-->
-                        <!--</div>-->
-                        <!--&lt;!&ndash; End of Testimonial 3 &ndash;&gt;-->
-                      <!--</div>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                  <!-- End of Testimonials -->
-
-                  <div class="white-space-50"></div>
-
-                  <!-- Clients -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="block-title">
-                        <h3>Clients</h3>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="clients owl-carousel">
-                        <div class="client-block">
-                            <a href="https://getter.ai/" target="_blank" title="Getter AI">
-                                <img src="img/clients/getter.png" alt="Getter AI" class="clients-align">
-                            </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.canablis.com.br/" target="_blank" title="Blis (former Canablis)">
-                            <img src="img/clients/canablis.png" alt="Blis (former Canablis)" class="clients-align">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.rievolution.pt/" target="_blank" title="Rievolution">
-                            <img src="img/clients/rievolutionlogo.png" alt="Rievolution" class="clients-align">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.carenet.com.br/" target="_blank" title="Carenet Longevity">
-                            <img src="img/clients/carenet.png" alt="Carenet Longevity" class="clients-align">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.linkedin.com/company/usepingo/" target="_blank" title="Pin.go">
-                            <img src="img/clients/pin_go.jpeg" alt="Pin.go">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.aerospacetrack.com/" target="_blank" title="Aero space track">
-                            <img src="img/clients/aerospacetrack2.png" alt="Aero space track" class="clients-align">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.gupy.io/" target="_blank" title="Gupy">
-                            <img src="img/clients/gupy.png" alt="Gupy">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://agilesistemas.com/" target="_blank" title="Agile">
-                            <img src="img/clients/agile.jpg" alt="Agile - Sistemas de Segurança">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.teck.com.br/" target="_blank" title="Teck Labs">
-                            <img src="img/clients/teck.jpg" alt="Teck Labs">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://2ltecnologia.com.br/" target="_blank" title="2L Tecnologia">
-                            <img src="img/clients/2L.jpg" alt="2L Tecnologia">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="#" target="_blank" title="FRV">
-                            <img src="img/clients/frv.jpg" alt="FRV Contabilidade">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.liuv.it/" target="_blank" title="Liuv">
-                            <img src="img/clients/liuv.png" alt="Liuv" class="clients-align">
-                          </a>
-                        </div>
-
-                        <div class="client-block">
-                          <a href="https://www.uerj.br/" target="_blank" title="UERJ">
-                            <img src="img/clients/uerj.jpg" alt="UERJ">
-                          </a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End of Clients -->
-
-                  <div class="white-space-50"></div>
-
-                </div>
-              </section>
-              <!-- End of About Me Subpage -->
-
-              <!-- Resume Subpage -->
-              <section data-id="resume" class="animated-section">
-                <div class="page-title">
-                  <h2>Resume</h2>
-                </div>
-
-                <div class="section-content">
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-7">
-
-                      <div class="block-title">
-                        <h3>Education</h3>
-                      </div>
-
-                      <div class="timeline timeline-second-style clearfix">
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2018</h5>
-                            <span class="item-company">Estácio de Sá University</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">System Analysis</h4>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2013</h5>
-                            <span class="item-company">Univercidade</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Computer Science</h4>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="white-space-50"></div>
-
-                      <div class="block-title">
-                        <h3>Experience</h3>
-                      </div>
-
-                      <div class="timeline timeline-second-style clearfix">
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2022 - Actual</h5>
-                            <span class="item-company">Pipefy</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Software Engineer</h4>
-                            <p>Pipefy is the Work Management platform that empowers do-ers to organize and control their work in a single place, allowing anyone to streamline and automate any business process on their own. <br>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2021 - 2022</h5>
-                            <span class="item-company">Bolttech</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Software Engineer</h4>
-                            <p>Bolttech operates leading online insurance platforms in Asia, Europe and US and we recently became a unicorn. 🦄 <br>
-                            I worked as a software engineer implementing new features and improving existing ones.
-                            I always try to bring best practices that allow for better collaboration, knowledge sharing, teamwork and visibility for the team, I also act as a delivery champion and squad lead (during my direct leader's vacation and also when necessary for any other reasons).</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2020 - 2021</h5>
-                            <span class="item-company">Pipefy</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Lead Software Engineer</h4>
-                            <p>Development and maintenance web applications and lead a team with 5 engineers.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2019 - 2020</h5>
-                            <span class="item-company">Alice</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Senior Software Engineer</h4>
-                            <p>Development and maintenance web applications and devops.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2018 - 2019</h5>
-                            <span class="item-company">Yellow / Grow Mobility</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Senior Software Engineer</h4>
-                            <p>Development and maintenance web applications, team leadership and devops.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2018 - 2018</h5>
-                            <span class="item-company">INTI</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">CTO</h4>
-                            <p>Development and maintenance web applications, team building, devops, management.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2017 - 2018</h5>
-                            <span class="item-company">99</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Full stack Developer</h4>
-                            <p>Development and maintenance web and mobile applications and devops.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2016 - 2016</h5>
-                            <span class="item-company">Spot</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">CTO</h4>
-                            <p>Development and maintenance web applications, team building, devops, management.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2015 - 2016</h5>
-                            <span class="item-company">Rastreabilidade Brasil</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Software Engineer</h4>
-                            <p>Development and maintenance web applications.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2014 - 2015</h5>
-                            <span class="item-company">Bematech S/A</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Senior Software Engineer</h4>
-                            <p>Development and maintenance android and web applications and leadership responsibilities.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2014 - 2014</h5>
-                            <span class="item-company">Riocard</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Senior Software Engineer</h4>
-                            <p>Development and maintenance web applications.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2013 - 2014</h5>
-                            <span class="item-company">E-novasys</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Senior Software Engineer</h4>
-                            <p>Data engineer and web development.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2011 - 2013</h5>
-                            <span class="item-company">Microcis</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Technical leader and Software Engineer</h4>
-                            <p>Development and maintenance web applications and leadership responsibilities.</p>
-                          </div>
-                        </div>
-
-                        <div class="timeline-item clearfix">
-                          <div class="left-part">
-                            <h5 class="item-period">2008 - 2011</h5>
-                            <span class="item-company">C2J</span>
-                          </div>
-                          <div class="divider"></div>
-                          <div class="right-part">
-                            <h4 class="item-title">Software Engineer</h4>
-                            <p>Develop and maintenance desktop, web and wap applications.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <!-- Skills & Certificates -->
-                    <div class="col-xs-12 col-sm-5">
-
-                      <!-- Others Skills -->
-                      <div class="block-title">
-                        <h3>Others <span>Skills</span></h3>
-                      </div>
-
-                      <div class="skills-info skills-second-style">
-                        <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Software Architecture</h4>
-                          <div class="skill-value">80%</div>
-                        </div>
-                        <div class="skill-container skill-6">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                        <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Agile Methodologies</h4>
-                          <div class="skill-value">70%</div>
-                        </div>
-                        <div class="skill-container skill-3">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                        <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Management</h4>
-                          <div class="skill-value">70%</div>
-                        </div>
-                        <div class="skill-container skill-3">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                        <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Cloud Computing</h4>
-                          <div class="skill-value">90%</div>
-                        </div>
-                        <div class="skill-container skill-5">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                        <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Distributed Systems</h4>
-                          <div class="skill-value">80%</div>
-                        </div>
-                        <div class="skill-container skill-6">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                         <!-- Skill -->
-                        <div class="skill clearfix">
-                          <h4>Devops</h4>
-                          <div class="skill-value">70%</div>
-                        </div>
-                        <div class="skill-container skill-6">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill -->
-
-                      </div>
-                      <!-- End of Others Skills -->
-
-                      <div class="white-space-10"></div>
-
-                      <!-- Coding Skills -->
-                      <div class="block-title">
-                        <h3>Coding <span>Skills</span></h3>
-                      </div>
-
-                      <div class="skills-info skills-second-style">
-                        <!-- Skill 5 -->
-                        <div class="skill clearfix">
-                          <h4>JavaScript (Front/Backend)</h4>
-                          <div class="skill-value">90%</div>
-                        </div>
-                        <div class="skill-container skill-5">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 5 -->
-
-                        <!-- Skill 6 -->
-                        <div class="skill clearfix">
-                          <h4>Java</h4>
-                          <div class="skill-value">90%</div>
-                        </div>
-                        <div class="skill-container skill-5">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 6 -->
-
-                        <!-- Skill 7 -->
-                        <div class="skill clearfix">
-                          <h4>HTML/CSS</h4>
-                          <div class="skill-value">70%</div>
-                        </div>
-                        <div class="skill-container skill-3">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 7 -->
-
-                        <!-- Skill 8 -->
-                        <div class="skill clearfix">
-                          <h4>Relational databases</h4>
-                          <div class="skill-value">80%</div>
-                        </div>
-                        <div class="skill-container skill-6">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 8 -->
-
-                        <!-- Skill 9 -->
-                        <div class="skill clearfix">
-                          <h4>Non-Relational databases</h4>
-                          <div class="skill-value">70%</div>
-                        </div>
-                        <div class="skill-container skill-3">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 9 -->
-
-                        <!-- Skill 10 -->
-                        <div class="skill clearfix">
-                          <h4>Kotlin</h4>
-                          <div class="skill-value">60%</div>
-                        </div>
-                        <div class="skill-container skill-2">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 10 -->
-
-                        <!-- Skill 11 -->
-                        <div class="skill clearfix">
-                          <h4>Golang</h4>
-                          <div class="skill-value">60%</div>
-                        </div>
-                        <div class="skill-container skill-2">
-                          <div class="skill-percentage"></div>
-                        </div>
-                        <!-- End of Skill 11 -->
-                      </div>
-                      <!-- End of Coding Skills -->
-
-                      <div class="white-space-10"></div>
-
-                      <!-- Knowledges -->
-                      <div class="block-title">
-                        <h3>Knowledges</h3>
-                      </div>
-
-                      <ul class="knowledges">
-                        <li>Amazon Web Services</li>
-                        <li>Google Cloud</li>
-                        <li>Node JS</li>
-                        <li>Java</li>
-                        <li>Golang</li>
-                        <li>Infrastructure</li>
-                        <li>Kotlin</li>
-                        <li>Android</li>
-                        <li>Javascript</li>
-                        <li>Problem-Solving</li>
-                        <li>Distributed Systems</li>
-                        <li>Agile Methodologies</li>
+                  <div class="col-xs-12 col-sm-5">
+                    <div class="info-list">
+                      <ul>
+                        <li>
+                          <span class="title" data-i18n="about.loc.label">Localização</span>
+                          <span class="value">Braga, Portugal</span>
+                        </li>
+                        <li>
+                          <span class="title">E-mail</span>
+                          <span class="value">rdiego26@gmail.com</span>
+                        </li>
+                        <li>
+                          <span class="title" data-i18n="about.avail.label">Disponibilidade</span>
+                          <span class="value" style="color:#e84343;" data-i18n="about.avail.val">Disponível para novos projetos</span>
+                        </li>
+                        <li>
+                          <span class="title" data-i18n="about.work.label">Atuação</span>
+                          <span class="value" data-i18n="about.work.val">Remoto / Internacional</span>
+                        </li>
                       </ul>
-                      <!-- End of Knowledges -->
                     </div>
-                    <!-- End of Skills & Certificates -->
+                  </div>
+                </div>
+
+                <div class="white-space-30"></div>
+
+                <div class="row stats-row">
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="stat-block">
+                      <span class="stat-number">15+</span>
+                      <span class="stat-label" data-i18n="about.stat.years">Anos de Experiência</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="stat-block">
+                      <span class="stat-number">50+</span>
+                      <span class="stat-label" data-i18n="about.stat.projects">Projetos Entregues</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="stat-block">
+                      <span class="stat-number">13+</span>
+                      <span class="stat-label" data-i18n="about.stat.clients">Clientes Atendidos</span>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="stat-block">
+                      <span class="stat-number">100%</span>
+                      <span class="stat-label" data-i18n="about.stat.results">Foco em Resultados</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="white-space-50"></div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="block-title">
+                      <h3 data-i18n="about.clients.title">Empresas que <span>Confiam</span></h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="clients owl-carousel">
+                      <div class="client-block"><a href="https://getter.ai/" target="_blank"><img src="img/clients/getter.png" alt="Getter AI" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.canablis.com.br/" target="_blank"><img src="img/clients/canablis.png" alt="Blis" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.rievolution.pt/" target="_blank"><img src="img/clients/rievolutionlogo.png" alt="Rievolution" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.carenet.com.br/" target="_blank"><img src="img/clients/carenet.png" alt="Carenet" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.linkedin.com/company/usepingo/" target="_blank"><img src="img/clients/pin_go.jpeg" alt="Pin.go"></a></div>
+                      <div class="client-block"><a href="https://www.aerospacetrack.com/" target="_blank"><img src="img/clients/aerospacetrack2.png" alt="Aero Space Track" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.gupy.io/" target="_blank"><img src="img/clients/gupy.png" alt="Gupy"></a></div>
+                      <div class="client-block"><a href="https://agilesistemas.com/" target="_blank"><img src="img/clients/agile.jpg" alt="Agile"></a></div>
+                      <div class="client-block"><a href="https://www.teck.com.br/" target="_blank"><img src="img/clients/teck.jpg" alt="Teck Labs"></a></div>
+                      <div class="client-block"><a href="https://2ltecnologia.com.br/" target="_blank"><img src="img/clients/2L.jpg" alt="2L Tecnologia"></a></div>
+                      <div class="client-block"><a href="#"><img src="img/clients/frv.jpg" alt="FRV"></a></div>
+                      <div class="client-block"><a href="https://www.liuv.it/" target="_blank"><img src="img/clients/liuv.png" alt="Liuv" class="clients-align"></a></div>
+                      <div class="client-block"><a href="https://www.uerj.br/" target="_blank"><img src="img/clients/uerj.jpg" alt="UERJ"></a></div>
+                      <div class="client-block"><a href="https://streliciahouse.com/" target="_blank"><img src="img/clients/streliciahouse.png" alt="Strelicia House"></a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="white-space-50"></div>
+              </div>
+            </section>
+
+            <!-- SERVIÇOS -->
+            <section data-id="resume" class="animated-section">
+              <div class="page-title">
+                <h2 data-i18n="services.title">Meus <span>Serviços</span></h2>
+              </div>
+              <div class="section-content">
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p class="services-intro" data-i18n="services.intro">Ofereço consultoria técnica e desenvolvimento de software para empresas que precisam de soluções digitais sólidas, desde a concepção até a operação em produção.</p>
+                  </div>
+                </div>
+
+                <div class="white-space-20"></div>
+
+                <div class="row service-cards-row">
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-layers"></i></div>
+                      <h4 data-i18n="s1.title">Arquitetura de Software</h4>
+                      <p data-i18n="s1.desc">Definição de arquiteturas escaláveis, resilientes e alinhadas ao negócio. Revisão de sistemas legados e roadmap técnico estratégico.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-cloud"></i></div>
+                      <h4 data-i18n="s2.title">Cloud Computing &amp; DevOps</h4>
+                      <p data-i18n="s2.desc">Migração, otimização e gestão de infraestrutura em AWS e Google Cloud. Pipelines CI/CD, containerização e automação de infraestrutura.</p>
+                    </div>
+                  </div>
+
+                  <!-- AI Card — highlighted -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card service-card--ai">
+                      <div class="service-card-icon service-card-icon--ai"><i class="fas fa-brain"></i></div>
+                      <h4 data-i18n="s3.title">Soluções com Inteligência Artificial</h4>
+                      <p data-i18n="s3.desc">Desenvolvimento e integração de soluções com IA: automação inteligente, NLP, modelos de ML e integração com APIs como OpenAI, Gemini e AWS Bedrock.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-code"></i></div>
+                      <h4 data-i18n="s4.title">APIs &amp; Microsserviços</h4>
+                      <p data-i18n="s4.desc">Desenvolvimento de APIs REST/GraphQL e microsserviços de alta performance em Java, Node.js e Go. Integração entre sistemas e plataformas.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-screen"></i></div>
+                      <h4 data-i18n="s5.title">Desenvolvimento Web</h4>
+                      <p data-i18n="s5.desc">Aplicações web modernas e responsivas com React. Sistemas de gestão, dashboards e plataformas SaaS do backend ao frontend.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-laptop-phone"></i></div>
+                      <h4 data-i18n="s6.title">Desenvolvimento Mobile</h4>
+                      <p data-i18n="s6.desc">Aplicativos Android nativos em Kotlin e Java, com foco em performance, usabilidade e integração com ecossistemas digitais complexos.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-4 service-card-center">
+                    <div class="service-card">
+                      <div class="service-card-icon"><i class="lnr lnr-chart-bars"></i></div>
+                      <h4 data-i18n="s7.title">Consultoria Técnica</h4>
+                      <p data-i18n="s7.desc">Apoio estratégico para CTOs e fundadores: avaliação tecnológica, escolha de stack, gestão de times e aceleração de produtos digitais.</p>
+                    </div>
                   </div>
 
                 </div>
-              </section>
-              <!-- End of Resume Subpage -->
 
-              <!-- Contact Subpage -->
-              <section data-id="contact" class="animated-section">
-                <div class="page-title">
-                  <h2>Contact</h2>
+                <div class="white-space-50"></div>
+
+                <!-- How I Work -->
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="block-title">
+                      <h3 data-i18n="process.title">Como <span>Trabalho</span></h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row process-row">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="process-step">
+                      <div class="process-step-number">01</div>
+                      <h5 data-i18n="p1.title">Diagnóstico</h5>
+                      <p data-i18n="p1.desc">Entendo profundamente o problema, o contexto do negócio e as restrições técnicas existentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="process-step">
+                      <div class="process-step-number">02</div>
+                      <h5 data-i18n="p2.title">Proposta</h5>
+                      <p data-i18n="p2.desc">Apresento soluções claras com escopo, tecnologias, prazos e investimento — sem surpresas.</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="process-step">
+                      <div class="process-step-number">03</div>
+                      <h5 data-i18n="p3.title">Execução</h5>
+                      <p data-i18n="p3.desc">Desenvolvimento iterativo com entregas frequentes, comunicação constante e código de qualidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="process-step">
+                      <div class="process-step-number">04</div>
+                      <h5 data-i18n="p4.title">Entrega &amp; Suporte</h5>
+                      <p data-i18n="p4.desc">Deploy em produção com documentação completa e suporte pós-lançamento para garantir o sucesso.</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="section-content">
+                <div class="white-space-50"></div>
 
-                  <div class="row">
-                    <!-- Contact Info -->
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-map-marker"></i>
-                        <h4>Braga, Portugal</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-envelope"></i>
-                        <h4>rdiego26@gmail.com</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
-                      <div class="lm-info-block gray-default">
-                        <i class="lnr lnr-checkmark-circle"></i>
-                        <h4>Freelance Available</h4>
-                        <span class="lm-info-block-value"></span>
-                        <span class="lm-info-block-text"></span>
-                      </div>
-
+                <!-- Tech Stack -->
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="block-title">
+                      <h3 data-i18n="tech.title">Tecnologias <span>Utilizadas</span></h3>
                     </div>
-                    <!-- End of Contact Info -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <ul class="tech-tags">
+                      <li>Java</li><li>Node.js</li><li>Golang</li><li>React JS</li>
+                      <li>Kotlin</li><li>Android</li><li>AWS</li><li>Google Cloud</li>
+                      <li>Docker</li><li>Kubernetes</li><li>PostgreSQL</li><li>MongoDB</li>
+                      <li>OpenAI API</li><li>LangChain</li><li>CI/CD</li><li>Terraform</li>
+                      <li>REST APIs</li><li>GraphQL</li>
+                    </ul>
+                  </div>
+                </div>
 
-                    <!-- Contact Form -->
-                    <div class="col-xs-12 col-sm-8">
-                      <div class="block-title">
-                        <h3>How Can I <span>Help You?</span></h3>
-                      </div>
+                <div class="white-space-30"></div>
+              </div>
+            </section>
 
-                      <form id="contact_form" class="contact-form" action="#" method="post">
+            <!-- CONTATO -->
+            <section data-id="contact" class="animated-section">
+              <div class="page-title">
+                <h2 data-i18n="contact.title">Vamos <span>Conversar?</span></h2>
+              </div>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="lm-info-block gray-default">
+                      <i class="lnr lnr-map-marker"></i>
+                      <h4>Braga, Portugal</h4>
+                      <span class="lm-info-block-text" data-i18n="contact.loc.sub">Atendimento remoto global</span>
+                    </div>
+                    <div class="lm-info-block gray-default">
+                      <i class="lnr lnr-envelope"></i>
+                      <h4>rdiego26@gmail.com</h4>
+                      <span class="lm-info-block-text" data-i18n="contact.email.sub">Respondo em até 24h</span>
+                    </div>
+                    <div class="lm-info-block gray-default">
+                      <i class="lnr lnr-checkmark-circle"></i>
+                      <h4 data-i18n="contact.avail.title">Disponível para Projetos</h4>
+                      <span class="lm-info-block-text" data-i18n="contact.avail.sub">Novos projetos e consultorias</span>
+                    </div>
+                    <div class="lm-info-block gray-default">
+                      <i class="fab fa-linkedin-in" style="font-size:28px;color:#e84343;"></i>
+                      <h4><a href="https://www.linkedin.com/in/rdiego26/" target="_blank" style="color:inherit;">LinkedIn</a></h4>
+                      <span class="lm-info-block-text" data-i18n="contact.li.sub">Conecte-se comigo</span>
+                    </div>
+                  </div>
 
-                        <div class="messages"></div>
-
-                        <div class="controls two-columns">
-                          <div class="fields clearfix">
-                            <div class="left-column">
-                              <div class="form-group form-group-with-icon">
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
-                                <label>Full Name</label>
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-
-                              <div class="form-group form-group-with-icon">
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
-                                <label>Email Address</label>
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-
-                              <div class="form-group form-group-with-icon">
-                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
-                                <label>Subject</label>
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
+                  <div class="col-xs-12 col-sm-8">
+                    <div class="block-title">
+                      <h3 data-i18n="contact.form.title">Conte-me sobre o seu <span>Projeto</span></h3>
+                    </div>
+                    <form id="contact_form" class="contact-form" action="#" method="post">
+                      <div class="messages"></div>
+                      <div class="controls two-columns">
+                        <div class="fields clearfix">
+                          <div class="left-column">
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Campo obrigatório.">
+                              <label data-i18n="form.name">Nome Completo</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
                             </div>
-                            <div class="right-column">
-                              <div class="form-group form-group-with-icon">
-                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                                <label>Message</label>
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="E-mail válido é obrigatório.">
+                              <label data-i18n="form.email">Endereço de E-mail</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group form-group-with-icon">
+                              <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Campo obrigatório.">
+                              <label data-i18n="form.subject">Tipo de Serviço / Assunto</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
                             </div>
                           </div>
-
-                          <input type="submit" class="button btn-send" value="Send message">
+                          <div class="right-column">
+                            <div class="form-group form-group-with-icon">
+                              <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Por favor, deixe sua mensagem."></textarea>
+                              <label data-i18n="form.message">Descreva seu projeto ou desafio</label>
+                              <div class="form-control-border"></div>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
                         </div>
-                      </form>
-                    </div>
-                    <!-- End of Contact Form -->
+                        <input type="submit" class="button btn-send" id="form_submit" data-i18n-val="form.submit" value="Enviar Mensagem">
+                      </div>
+                    </form>
                   </div>
-
                 </div>
-              </section>
-              <!-- End of Contact Subpage -->
-            </div>
+              </div>
+            </section>
+
           </div>
+        </div>
 
       </div>
     </div>
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <!-- i18n loads BEFORE main.js so the carousel reads correct language text on init -->
+    <script src="js/i18n.js"></script>
     <script src="js/animating.js"></script>
-
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
-
     <script src='js/perfect-scrollbar.min.js'></script>
     <script src='js/jquery.shuffle.min.js'></script>
     <script src='js/masonry.pkgd.min.js'></script>
     <script src='js/owl.carousel.min.js'></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>-->
-    <!--<script src="js/jquery.googlemap.js"></script>-->
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
-	    (function(){
-		    emailjs.init("user_bx4bjbaboxA5D8JfHir3G");
-	    })();
+      (function(){
+        emailjs.init("user_bx4bjbaboxA5D8JfHir3G");
+      })();
     </script>
   </body>
 </html>
