@@ -12,6 +12,7 @@
       'nav.home'            : 'Home',
       'nav.about'           : 'Sobre Mim',
       'nav.services'        : 'Serviços',
+      'nav.products'        : 'Produtos',
       'nav.contact'         : 'Contato',
       /* Carousel */
       'carousel.1'          : 'Consultoria em Tecnologia',
@@ -80,7 +81,13 @@
       'form.message'        : 'Descreva seu projeto ou desafio',
       'form.submit'         : 'Enviar Mensagem',
       /* Footer */
-      'footer.copy'         : '© 2025 Diego Ramos. Todos os direitos reservados.'
+      'footer.copy'         : '© 2025 Diego Ramos. Todos os direitos reservados.',
+      /* Products */
+      'products.title'      : 'Meus <span>Produtos</span>',
+      'products.intro'      : 'Produtos públicos que desenvolvi — ferramentas e serviços criados para resolver problemas reais.',
+      'prod1.desc'          : 'Plataforma inteligente de agendamento online — simples, rápida e profissional. Ideal para profissionais autônomos e pequenas empresas gerenciarem seus compromissos.',
+      'prod.badge.live'     : 'Ao Vivo',
+      'prod.cta'            : 'Acessar Produto'
     },
     en: {
       /* Header */
@@ -89,6 +96,7 @@
       'nav.home'            : 'Home',
       'nav.about'           : 'About Me',
       'nav.services'        : 'Services',
+      'nav.products'        : 'Products',
       'nav.contact'         : 'Contact',
       /* Carousel */
       'carousel.1'          : 'Technology Consulting',
@@ -157,7 +165,13 @@
       'form.message'        : 'Describe your project or challenge',
       'form.submit'         : 'Send Message',
       /* Footer */
-      'footer.copy'         : '© 2025 Diego Ramos. All rights reserved.'
+      'footer.copy'         : '© 2025 Diego Ramos. All rights reserved.',
+      /* Products */
+      'products.title'      : 'My <span>Products</span>',
+      'products.intro'      : 'Public products I have built — tools and services created to solve real problems.',
+      'prod1.desc'          : 'Smart online scheduling platform — simple, fast and professional. Perfect for freelancers and small businesses to manage their appointments.',
+      'prod.badge.live'     : 'Live',
+      'prod.cta'            : 'Visit Product'
     }
   };
   /* ── APPLY LANGUAGE ───────────────────────────────────── */

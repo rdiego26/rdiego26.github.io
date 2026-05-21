@@ -852,3 +852,102 @@ input[type="text"] {
   }
 }
 
+/* ── PRODUCT CARDS ───────────────────────────────────────── */
+.product-cards-row {
+  margin-bottom: 10px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  margin-bottom: 24px;
+  position: relative;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 14px rgba(26, 46, 74, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  border-color: #e84343;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(26, 46, 74, 0.13);
+}
+
+.product-card-badge {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.1);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+.product-card-icon {
+  margin-bottom: 18px;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #fff5f5, #fee2e2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-icon i {
+  font-size: 28px;
+  color: #e84343;
+}
+
+.product-card-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin: 0 0 10px;
+}
+
+.product-card-desc {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.75em;
+  margin: 0 0 24px;
+  flex: 1;
+}
+
+.product-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e84343;
+  text-decoration: none;
+  border: 1.5px solid #e84343;
+  border-radius: 8px;
+  padding: 9px 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  align-self: flex-start;
+}
+
+.product-card-cta:hover {
+  background-color: #e84343;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.product-card-cta i {
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.product-card-cta:hover i {
+  transform: translateX(3px);
+}
+
